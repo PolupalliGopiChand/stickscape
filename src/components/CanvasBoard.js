@@ -4,6 +4,7 @@ import { useStore } from '../store';
 import Sticker from './Sticker';
 import Toolbar from './Toolbar';
 import StickerPanel from './StickerPanel';
+import './index.css'
 
 const CanvasBoard = () => {
   const stageRef = useRef();
@@ -22,14 +23,14 @@ const CanvasBoard = () => {
   return (
     <div>
       <StickerPanel />
-      <Toolbar onExport={handleExport} />
-      <Stage width={600} height={400} ref={stageRef} style={{ border: '1px solid black' }}>
+      <Stage className='canvas-board' width={600} height={400} ref={stageRef}>
         <Layer>
           {stickers.map((sticker, index) => (
             <Sticker key={index} index={index} sticker={sticker} />
           ))}
         </Layer>
       </Stage>
+      <Toolbar onExport={handleExport} />
     </div>
   );
 };

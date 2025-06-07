@@ -1,5 +1,6 @@
 import React from 'react';
 import CanvasBoard from './components/CanvasBoard';
+import './App.css'
 
 function App() {
   return (
